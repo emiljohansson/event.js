@@ -1,7 +1,7 @@
 /**
  *	https://github.com/emiljohansson/event.js
  *
- *	@version	0.1.3
+ *	@version	0.1.4
  *	@author		Emil Johansson <emiljohansson.se@gmail.com>
  *	@date		Aug 12, 2012
  */
@@ -9,7 +9,7 @@
 
 	var Event = window.Event || {};
 
-	Event.addEventListenerToArray = function(elemList, type, listener) {
+	function addEventListenerToArray(elemList, type, listener) {
 		for (var i = 0; i < elemList.length; i++) {
 			var elem = elemList[i];
 			Event.addEventListener(elem, type, listener);
@@ -18,7 +18,7 @@
 
 	Event.addEventListener = function(elem, type, listener) {
 		if (Object.prototype.toString.call( elem ) === '[object Array]') {
-			Event.addEventListenerToArray(elem, type, listener);
+			addEventListenerToArray(elem, type, listener);
 			return;
 		}
 		if (!elem) {

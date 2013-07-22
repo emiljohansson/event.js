@@ -1,9 +1,9 @@
 /**
- *  https://github.com/emiljohansson/event.js
- *  
- *  @version  0.1.2
- *  @author   Emil Johansson <emiljohansson.se@gmail.com>
- *  @date     Aug 12, 2012
+ *	https://github.com/emiljohansson/event.js
+ *
+ *	@version	0.1.3
+ *	@author		Emil Johansson <emiljohansson.se@gmail.com>
+ *	@date		Aug 12, 2012
  */
 (function() {
 
